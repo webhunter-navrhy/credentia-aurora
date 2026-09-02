@@ -1,0 +1,17 @@
+# Claude Design source files
+*.dc.html
+support.js
+.thumbnail
+
+# Uploaded source files
+uploads/
+
+# PDF
+*.pdf
+
+# macOS
+.DS_Store
+
+# Images not needed
+credentia-logo.jpeg
+axon-mark.png
