@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 html{scroll-behavior:smooth}
-body{margin:0;background:#FCFCFB;color:#0C2A20;font-family:'Jost',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:#FCFCFB;color:#0C2A20;font-family:'Jost',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:#1D4D3B;text-decoration:none}
 a:hover{color:#B08D46}
 ::selection{background:#1D4D3B;color:#fff}
@@ -43,7 +43,8 @@ button{border:none;background:none;font:inherit;cursor:pointer;padding:0}
 /* Responsive */
 @media(max-width:1000px){
   .nav-desktop{display:none !important}
-  .header-cta{margin-left:auto !important}
+  header .section-pad{padding-left:20px !important;padding-right:20px !important;gap:12px !important}
+  .header-cta{margin-left:auto !important;padding:9px 16px !important;font-size:11px !important}
   .hero-grid{grid-template-columns:1fr !important;gap:40px !important}
   .membership-grid{grid-template-columns:1fr !important}
   .cs-grid{flex-direction:column !important}
@@ -56,11 +57,13 @@ button{border:none;background:none;font:inherit;cursor:pointer;padding:0}
 }
 @media(max-width:768px){
   .hero-stats{gap:32px !important}
-  .section-pad{padding-left:20px !important;padding-right:20px !important}
+  .section-pad{padding-left:16px !important;padding-right:16px !important}
   .dealflow-row{grid-template-columns:1fr !important}
   .contact-grid{grid-template-columns:1fr !important}
-  header .section-pad{padding-left:16px !important;padding-right:16px !important;gap:12px !important}
-  .header-cta{padding:9px 16px !important;font-size:11px !important}
+  header .section-pad{padding-left:14px !important;padding-right:14px !important;gap:10px !important}
+  .header-cta{padding:8px 14px !important;font-size:10px !important}
+  .header-logo-name{font-size:14px !important;letter-spacing:.1em !important}
+  .header-logo-sub{font-size:8px !important;letter-spacing:.2em !important}
   .benefit-row{flex-direction:column !important;gap:10px !important}
   .hero-grid{gap:32px !important}
   .btn-primary,.btn-secondary{padding:14px 26px !important;font-size:13px !important}
@@ -156,8 +159,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #C0A15A;outline-offset:3p
   <div style="max-width:1280px;margin:0 auto;padding:14px 40px;display:flex;align-items:center;gap:36px" class="section-pad">
     <a href="#top" style="display:flex;align-items:center;gap:13px;flex-shrink:0;white-space:nowrap">
       <span style="display:block">
-        <span style="display:block;font-family:'Playfair Display',serif;font-size:18px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#0C2A20;line-height:1.1">Credentia Aurora</span>
-        <span style="display:block;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#8B978F;margin-top:5px">Private business &amp; investment club</span>
+        <span class="header-logo-name" style="display:block;font-family:'Playfair Display',serif;font-size:18px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#0C2A20;line-height:1.1">Credentia Aurora</span>
+        <span class="header-logo-sub" style="display:block;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#8B978F;margin-top:5px">Private business &amp; investment club</span>
       </span>
     </a>
     <nav class="nav-desktop" style="display:flex;gap:clamp(14px,1.9vw,28px);margin-left:auto;flex-shrink:0;white-space:nowrap;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:400;color:#5D6B63">
